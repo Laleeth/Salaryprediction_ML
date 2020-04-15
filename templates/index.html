@@ -1,0 +1,80 @@
+    <!doctype html>
+    <html lang="en">
+      <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <title>Hello, world!</title>
+      </head>
+      <body>
+      <header class="masthead">
+      <div class="container">
+       <div class="jumbotron">
+     <div class="login">
+    	<h1>Machine Learning Project - Predicting Salary of an Employee Analysis</h1>
+       <br>
+       <br>
+        <form action="{{ url_for('predict')}}"method="post">
+        <div class="form-row">
+        <div class="col">
+        	<input type="text" name="experience" placeholder="Experience" required="required" />
+        </div>
+        <div class="col">
+            <input type="text" name="test_score" placeholder="Test Score" required="required" />
+            </div>
+            <div class="col">
+    		<input type="text" name="interview_score" placeholder="Interview Score" required="required" />
+    </div>
+    <br>
+        <button type="submit" class="btn btn-info">Predict</button>
+            </div>
+        </form>
+        <br>
+    <h9>Note: Experience should be int (0 to 15) <br>Test_score,Interview_score should be int values(0 to 9) </h9>
+       <br>
+       <br>
+      
+    
+     </div>
+     </div>
+    
+    </div>
+    <div class="container">
+       <div class="jumbotron">
+    <div class="alert alert-success" role="alert">
+  <h4 class="alert-heading">Well done!</h4>
+ {{ prediction_text }}
+ <br>
+ <br>
+ 
+</div>
+</div>
+<h8> Thank you for visiting #Lee </h8>
+     </div>
+    </header>
+  <style>
+  .masthead {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  </style>
+    
+    
+    
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        
+        
+      </body>
+    </html>
+    
+    
