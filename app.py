@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 import numpy as np
 from flask import Flask, request, jsonify, render_template
 import pickle
@@ -54,4 +54,4 @@ def predict():
 
 if __name__ == "__main__":
     app.run(debug=True)
->>>>>>> a06de1b91a1094879339d2fadcc0a7964bfe7327
+
